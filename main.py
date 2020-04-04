@@ -164,7 +164,7 @@ def get_file(fileurl):
     return request_file
 
 
-def export_json(data_dict, filepath='./json/to-meshcodes.json'):
+def export_json(data_dict, filepath='./json/meshcodes.json'):
     with open(filepath, 'w') as f:
         json.dump(data_dict, f, indent=4, ensure_ascii=False)
 
