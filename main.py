@@ -77,7 +77,7 @@ def csvstr_to_dicts(csvstr)->dict:
         except KeyError:
             pass
         pref_name = PREF_CODES[pref_code]
-        meshcode = d[2][:4]
+        meshcode = d[2][:6]
         if not meshcode in pref_meshcodes:
             pref_meshcodes.append(meshcode)
         parsed_dict[pref_code] = pref_meshcodes
@@ -90,7 +90,7 @@ def csvstr_to_dicts(csvstr)->dict:
         except KeyError:
             pass
         lg_name = d[1]
-        meshcode = d[2][:4]
+        meshcode = d[2][:6]
         if not meshcode in meshcodes:
             meshcodes.append(meshcode)
         parsed_dict[d[0]] = meshcodes
@@ -173,7 +173,7 @@ def get_file(fileurl):
     return request_file
 
 
-def export_json(data_dict, filepath='./json/meshcodes.json'):
+def export_json(data_dict, filepath='./json/2meshcodes.json'):
     with open(filepath, 'w') as f:
         json.dump(data_dict, f, indent=4, ensure_ascii=False)
 
