@@ -73,31 +73,27 @@ def csvstr_to_dicts(csvstr)->dict:
         pref_code = d[0][:2]
         pref_meshcodes = []
         try:
-            pref_meshcodes = parsed_dict[pref_code]['meshcodes']
+            pref_meshcodes = parsed_dict[pref_code]
         except KeyError:
             pass
         pref_name = PREF_CODES[pref_code]
         meshcode = d[2][:4]
         if not meshcode in pref_meshcodes:
             pref_meshcodes.append(meshcode)
-        parsed_dict[pref_code] = {
-            'meshcodes':pref_meshcodes
-        }
+        parsed_dict[pref_code] = pref_meshcodes
 
         #lg data setup
         lg_code = d[0]
         meshcodes = []
         try:
-            meshcodes = parsed_dict[lg_code]['meshcodes']
+            meshcodes = parsed_dict[lg_code]
         except KeyError:
             pass
         lg_name = d[1]
         meshcode = d[2][:4]
         if not meshcode in meshcodes:
             meshcodes.append(meshcode)
-        parsed_dict[d[0]] = {
-            'meshcodes':meshcodes
-        }
+        parsed_dict[d[0]] = meshcodes
     return parsed_dict
 
 def csvstr_to_dicts_prefcodes_to_name(csvstr)->dict:
