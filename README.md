@@ -2,6 +2,12 @@
 都道府県市町村コードからメッシュコードなどを取得出来るAPIです
 リクエストとレスポンスの対応は以下の表のとおりです
 
+## API URL
+```
+https://kanahiro.github.io/lg-meshcode-api/lgcode-to-meshcodes/{都道府県市町村コード}/{データの種類:nameかmeshcodes}
+https://kanahiro.github.io/lg-meshcode-api/lgcode-to-lgname/{都道府県市町村コード}
+```
+
 ## Request and Response
 |  Req  |  Res  |
 | ---- | ---- |
