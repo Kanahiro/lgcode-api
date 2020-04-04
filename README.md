@@ -4,7 +4,7 @@
 
 ## API URL
 ```
-https://kanahiro.github.io/lg-meshcode-api/lgcode-to-meshcodes/{都道府県市町村コード}/{データの種類:nameかmeshcodes}
+https://kanahiro.github.io/lg-meshcode-api/lgcode-to-meshcodes/{都道府県市町村コード}/{nameかmeshcodes}
 https://kanahiro.github.io/lg-meshcode-api/lgcode-to-lgname/{都道府県市町村コード}
 ```
 
