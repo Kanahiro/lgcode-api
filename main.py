@@ -131,15 +131,24 @@ def decode_csv(csv_data)->str:
 
     #外部のCSVファイルをインポート url=xxxx/xxxx.csv
 def import_csv_from(baseurl):    
-    integrated_datas = {}
-
+    hokkaido_datas = {}
     for i in range(3):
         filename = '01-' + str(i + 1)
         csvurl = baseurl + 'csv/%s.csv'%filename
         request_file = get_file(csvurl)
         f = decode_csv(request_file.read())
         data = csvstr_to_dicts(f)
-        integrated_datas.update(data)
+        for key in hokkaido_datas:
+            for code in hokkaido_datas[key]:
+                try:
+                    if not code in data[key]:
+                        data[key].append(code)
+                except:
+                    continue
+
+        hokkaido_datas.update(data)
+
+    integrated_datas = hokkaido_datas
     
     for i in range(47):
         filename = str(i + 1).zfill(2)
