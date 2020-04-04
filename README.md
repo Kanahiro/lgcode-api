@@ -17,7 +17,8 @@ https://kanahiro.github.io/lgcode-api/name/{都道府県市町村コード}
 |  Req  |  Res  |
 | ---- | ---- |
 |  https://kanahiro.github.io/lgcode-api/1meshcodes/  |  to-meshcodesの全データ { lgcode:1次メッシュコード一覧(array) }  |
-|  https://kanahiro.github.io/lgcode-api/2meshcodes/01  |  指定された自治体の2次メッシュコード一覧(array)  |
+|  https://kanahiro.github.io/lgcode-api/2meshcodes/01  |  指定された都道府県の2次メッシュコード一覧(array)  |
+|  https://kanahiro.github.io/lgcode-api/3meshcodes/01220  |  指定された市町村の3次メッシュコード一覧(array)  |
 |  https://kanahiro.github.io/lgcode-api/name/  |  to-lgnameの全データ { lgcode:自治体名(str) }  |
 |  https://kanahiro.github.io/lgcode-api/name/01  |  指定された自治体の名前(str)  |
 
