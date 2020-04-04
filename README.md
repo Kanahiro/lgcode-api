@@ -10,3 +10,6 @@
 |  https://kanahiro.github.io/lg-meshcode-api/lgcode-to-meshcodes/01/meshcodes/  |  都道府県市町村コード01:北海道の2次メッシュコード一覧(array)  |
 |  https://kanahiro.github.io/lg-meshcode-api/lgcode-to-lgname/  |  lecode-to-lgnameの全データ { lgname:自治体名(str) }  |
 |  https://kanahiro.github.io/lg-meshcode-api/lgcode-to-lgname/01  |  自治体名(str)  |
+
+## DataSource
+- 市町村別メッシュコード一覧: https://www.stat.go.jp/data/mesh/m_itiran.html
