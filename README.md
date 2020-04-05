@@ -14,7 +14,7 @@ https://kanahiro.github.io/lgcode-api/name/{都道府県市町村コード}
 ```
 
 #### 参考
-[このリポジトリに基づいて](https://github.com/Kanahiro/gh-pages-rest-api)JSONファイルをディレクトリに変換しています
+[このリポジトリを多少カスタムして](https://github.com/Kanahiro/gh-pages-rest-api)JSONファイルをディレクトリに変換しています
 
 ## Request and Response
 |  Req  |  Res  |
